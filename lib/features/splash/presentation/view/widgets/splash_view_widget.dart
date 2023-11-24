@@ -33,16 +33,17 @@ class _SplashViewWidgetState extends State<SplashViewWidget>
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Image.asset(Assets.images.logo.path),
-        const SizedBox(
-          height: AppSize.s14,
-        ),
-        SlidingText(slidingAnimation: slidingAnimation),
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(Assets.images.logo.path),
+          const SizedBox(
+            height: AppSize.s14,
+          ),
+          SlidingText(slidingAnimation: slidingAnimation),
+        ],
+      ),
     );
   }
 

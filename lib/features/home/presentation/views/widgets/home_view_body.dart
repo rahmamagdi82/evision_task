@@ -14,13 +14,15 @@ class HomeViewBody extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Stack(
-            clipBehavior: Clip.none,
-            alignment: Alignment.topCenter,
-            children: [
-              WelcomeMessageContainer(),
-              AnimationWidget(),
-            ],
+          Center(
+            child: Stack(
+              clipBehavior: Clip.none,
+              alignment: Alignment.topCenter,
+              children: [
+                WelcomeMessageContainer(),
+                AnimationWidget(),
+              ],
+            ),
           ),
         ],
       ),
